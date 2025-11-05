@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatDong Signup/Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- font owesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+    <style>
+        #register:hover {
+            background-color: #fff;
+            color: #462403;
+            box-shadow: 0 0 10px rgba(53, 10, 113, 0.5);
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <!-- Login-Form -->
+        <div class="form-box login">
+            <form>
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" placeholder="Email" required />
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <!-- <div class="input-box">
+                    <input type="text" name="usernmae" id="usernamee" placeholder="Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div> -->
+
+                <div class="input-box">
+                    <input type="password" name="password" id="password" placeholder="Password" required />
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+
+                <div class="forgot-link">
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn loginBtn" id="loginBtn">Login</button>
+                <p>or login with social platforms</p>
+
+                <div class="social-icons">
+                    <a href="#" id="googleBtn"><i class="fa-brands fa-google" style="color: #ff0000"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f" style="color: #3b94d8"></i></a>
+                    <a href="#"><i class="fa-solid fa-phone" style="color: #0e8116"></i></a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Register  Form-->
+        <div class="form-box register">
+            <form>
+                <h1>Registration</h1>
+
+                <div class="input-box">
+                    <input type="email" name="email" id="email" placeholder="Email" required />
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" name="password" id="password" placeholder="Password" required />
+                    <i class="fa-solid fa-lock" style="margin-top: -14px"></i>
+                    <p>Password must be at least 6 characters</p>
+                </div>
+
+                <button type="submit" class="btn registerBtn" id="registerBtn">
+                    Register
+                </button>
+                <p>or register with social platforms</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-google" style="color: #ff0000"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f" style="color: #3b94d8"></i></a>
+                    <a href="#"><i class="fa-solid fa-phone" style="color: #0e8116"></i></a>
+                </div>
+            </form>
+        </div>
+
+        <!-- Toggle Box -->
+        <div class="toggle-box">
+            <!-- Toggle Box left -->
+            <div class="toggle-panel toggle-left">
+                <i class="fa-solid fa-comments" style="color: #ffffff"></i>
+
+                <h1>ChatDong !</h1>
+                <p><a href="#">Don't have an account?</a></p>
+                <button class="btn register-btn" id="register">
+                    <a href="#">Register</a>
+                </button>
+            </div>
+
+            <!-- Toggle Box right -->
+            <div class="toggle-panel toggle-right">
+                <h2 style="font-size: 30px">Welcome ChatDong!</h2>
+                <p><a href="./signup-login.html">Already have an account?</a></p>
+                <button class="btn login-btn">login</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script type="module" src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+        });
+    </script>
+</body>
+
+</html>

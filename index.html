@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatDong</title>
+   
+    <link rel="stylesheet" href="index.css">
+     <!-- Aos animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- font owesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="content-left-sec">
+            <div class="chat-content"  data-aos="fade-down">
+                <h1>ChatDong</h1>
+                <hr size="2" width="60" style="margin-left: 220px; margin-top: 2px;">
+                <h4>Connect Beyond Boundaries</h4>
+                <p>Experience sameless communication with our next-generation chat platform. Beautiful dedign meets
+                    powerful funtionally.</p>
+                <div class="content-btn">
+                    <button class="content-btn try-btn">Try Demo <img src="./assets/images/right_9199645.png" width="18px" height="20px" alt=""></button>
+                    <button onclick="gteStart()" class="content-btn get-btn">Get Started</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="content-right-sec">
+            <div><img src="./assets/images/background-image.jpg" alt=""></div>
+
+            <div class="form-container">
+                <div class="form" data-aos="fade-up-left">
+                    <div class="form-head">
+                        <div class="profiles">
+                            <div>
+                                <img src="./assets/images/profile-img.jpg" alt="profile- picture">
+                                <div class="online-icon">
+                                    <img src="./assets/images/online-icon.png" alt="online-icon">
+
+                                </div>
+                            </div>
+                            <div>
+                                <p>John Dev</p>
+                                <p style="font-size: 12px; color: #333232; font-weight: 500;">online</p>
+                            </div>
+                            <div class="profile-setting">
+                                <img src="./assets/images/dots-icon.png" alt="profile-setting">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-main">
+                        <form action="#">
+                            <input type="text" class="rec-chats" placeholder="Welcome to ChatDong! 👋">
+                            <br>
+                            <input type="text" class="send-chat" placeholder="This looks amazing!">
+                            <br>
+                            <input type="text" class="rec-chats" placeholder="Try the ChatDong to explore features ✨"
+                                style="width: 90%; margin-top: 20px;">
+                        </form>
+                    </div>
+                    <div class="chat-footer">
+                        <input type="text" placeholder="Type a message...">
+                        <img src="./assets/images/send.png" alt=" send">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script type="module" src="script.js"></script>
+
+    <!-- Aos  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+             offset: 400,
+             duration: 1000
+        });
+    </script>
+</body>
+
+</html>

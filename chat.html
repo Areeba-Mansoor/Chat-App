@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatDong Application</title>
+    <link rel="stylesheet" href="chat.css" />
+
+    <!-- font owesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="overlay"></div>
+    <div class="chat-container">
+      <div class="chatapp-box" id="chat-container">
+        <div class="chat">
+          <div class="chat-name">
+            <h1 style="text-align: left">ChatDong</h1>
+          </div>
+          <div class="chat-button">
+            <button id="toggleBtn" class="btns">
+              <img
+                src="./assets/images/sun.png"
+                alt="Toggle"
+                style="margin-top: 5px"
+              />
+            </button>
+            <button id="logoutBtn" class="btns">
+              <img
+                src="./assets/images/logout.png"
+                alt=""
+                width="26px"
+                height="26px"
+                style="margin-left: -4px; margin-top: -5px"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div id="chat-box"></div>
+
+        <div class="typing-messsage">
+          <input
+            class="send-msg"
+            type="text"
+            id="message"
+            placeholder="Type a message"
+          />
+          <button class="btn send-btn" onclick="messageSend()">
+            <img src="./assets/images/send (1).png" alt="" width="20px" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="app.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
