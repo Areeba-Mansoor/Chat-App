@@ -18,21 +18,19 @@ body {
 }
 
 .main-content {
-  display: flex;
-  height: 100vh;
   width: 100%;
+  display: flex;
 }
 
 .content-left-sec {
   width: 50%;
-  min-height: 100%;
-  padding: 20px 50px;
+  padding: 20px;
   background: linear-gradient(#131313, #261301);
 }
 
 .chat-content {
   width: 600px;
-  padding: 30px 50px;
+  padding: 30px;
   background-color: transparent;
   position: absolute;
   top: 200px;
@@ -56,7 +54,7 @@ body {
   margin-top: 10px;
   font-size: 14px;
   line-height: 1.6;
-  color: #777676;
+  color: #c8c8c8;
   font-family: "Poppins", sans-serif;
 }
 
@@ -75,14 +73,16 @@ body {
   cursor: pointer;
 }
 
-.try-btn {
+.try-btn a {
   color: #000;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .try-btn:hover {
   transform: translateY(-8px);
 }
+
 .get-btn {
   background-color: transparent;
   border: 1px solid #fff;
@@ -215,7 +215,7 @@ body {
   width: 100%;
   height: 80px;
   background-color: rgba(112, 112, 112, 0.2);
-  border-top: 1px solid rgb(93, 93, 93);
+  border-top: 1px solid rgb(135, 134, 134);
 }
 
 .chat-footer input {

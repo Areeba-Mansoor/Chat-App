@@ -82,18 +82,13 @@ document.getElementById("googleBtn")?.addEventListener("click", () => {
 document.getElementById("logoutBtn")?.addEventListener("click", () => {
     signOut(auth)
         .then(() => {
-            swal({
-                title: "Log Out",
-                text: "Successfully!",
-                icon: "success",
-                button: "okay!",
-            });
-
-            window.location.href = "index.html";
+           alert("Log Out Successfullylog🔄")
+            window.location.href = "index.html"
         })
-        .catch((error) => {
-            alert(error.message);
-        });
+        .catch((error) =>{
+           alert(error.message)
+        })
+
 });
 
 //Enter chat function
@@ -115,6 +110,7 @@ window.messageSend = function () {
         .then(() => (document.getElementById("message").value = ""))
         .catch((error) => alert("Error sending message: " + error.message));
 };
+
 //Delet message
 function deleteMessage(messageId, messageElement) {
     remove(ref(db, `messages/${messageId}`))
@@ -199,25 +195,24 @@ window.onload = function () {
         chatBox.scrollTop = chatBox.scrollHeight;
     });
 }
-// //Theme change
-const chatContainer = document.getElementById("chat-container");
-const themeBtn = document.getElementById("toggleBtn");
 
-const themes = [
-    { container: "#efe8e8ff", text: "#5d3210ff" }, // light
-    { container: "#595751ff", text: "#f8f8f8ff" },
-];
+//toggle button
+const toggleBtn = document.querySelector("#checkbox");
+const chatBox = document.querySelector("#chat-box");
+const messageBox = document.querySelector(".typing-messsage")
 
-let currentTheme = 0;
+toggleBtn.addEventListener("change", () => {
+    if (toggleBtn.checked) {
 
-themeBtn.addEventListener("click", () => {
-    currentTheme = (currentTheme + 1) % themes.length;
-    const theme = themes[currentTheme];
+        chatBox.style.backgroundColor = "#413c3cff";
+        chatBox.style.color = "#fff";
+        messageBox.style.backgroundColor = "#696969"
+    } else {
 
-    //Apply colours
-    chatContainer.style.background = theme.container;
-    chatContainer.style.color = theme.text;
-
-    const texts = chatContainer.querySelectorAll("h1, h2, p, button, input");
-    texts.forEach((el) => (el.style.color = theme.text));
+        chatBox.style.backgroundColor = "#bdc0c7ff";
+        chatBox.style.color = "#000";
+        messageBox.style.backgroundColor = "#F0F8FF"
+    }
 });
+
+
