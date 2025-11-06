@@ -189,8 +189,7 @@ form {
   transition: 0.4s ease-in-out;
 }
 
-.loginBtn:hover,
-.registerBtn:hover {
+.loginBtn:hover, .registerBtn:hover{
   transform: translateY(-5px);
   background-color: #ffffff;
   color: #5a2a03;
@@ -324,8 +323,8 @@ form {
   box-shadow: 0 0 10px rgba(53, 10, 113, 0.5);
   transform: translateY(-10px);
 }
-.toggle-panel #register:hover{
-   background-color: #fff;
+.toggle-panel #register:hover {
+  background-color: #fff;
   color: #462403;
   box-shadow: 0 0 10px rgba(53, 10, 113, 0.5);
   transform: translateY(-10px);
@@ -405,4 +404,11 @@ form {
   text-align: center;
   margin-top: 20px;
   font-size: 12px;
+}
+
+.registerBtn:hover {
+  background-color: #fff;
+  color: #462403;
+  box-shadow: 0 0 10px rgba(53, 10, 113, 0.5);
+  transform: translateY(-10px);
 }
